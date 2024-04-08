@@ -1,4 +1,4 @@
-package com.trends.testwebcloak.view
+package com.trends.testwebcloak.view.utils
 
 import android.graphics.Bitmap
 import android.webkit.WebResourceError

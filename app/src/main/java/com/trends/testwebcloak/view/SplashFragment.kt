@@ -8,9 +8,13 @@ import android.widget.FrameLayout.LayoutParams.*
 import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.core.view.isVisible
-import com.trends.testwebcloak.BindingFragment
 import com.trends.testwebcloak.databinding.FragmentSplashBinding
 import com.trends.testwebcloak.models.SplashViewModel
+import com.trends.testwebcloak.view.utils.BindingFragment
+import com.trends.testwebcloak.view.utils.ChromeClient
+import com.trends.testwebcloak.view.utils.ChromeClientFilesSelector
+import com.trends.testwebcloak.view.utils.LoadState
+import com.trends.testwebcloak.view.utils.WebViewClient
 import org.koin.android.ext.android.inject
 
 class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {

@@ -1,4 +1,4 @@
-package com.trends.testwebcloak
+package com.trends.testwebcloak.view.utils
 
 import android.content.Intent
 import android.net.Uri
