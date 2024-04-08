@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="red">#BF2323</color>
+    <color name="red_tr">#80BF2323</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">TestWebCloak</string>
+    <string name="default_web_client_id" translatable="false">353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://testapi-4c364-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">353599915048</string>
+    <string name="google_api_key" translatable="false">AIzaSyAr64cv6UG1_ID9THr7etiGsYSDmgv-J7s</string>
+    <string name="google_app_id" translatable="false">1:353599915048:android:fb5b8a7f36291d8c8d611d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAr64cv6UG1_ID9THr7etiGsYSDmgv-J7s</string>
+    <string name="google_storage_bucket" translatable="false">testapi-4c364.appspot.com</string>
+    <string name="project_id" translatable="false">testapi-4c364</string>
+    <style name="Base.Theme.TestWebCloak" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.TestWebCloak" parent="Base.Theme.TestWebCloak"/>
+</resources>

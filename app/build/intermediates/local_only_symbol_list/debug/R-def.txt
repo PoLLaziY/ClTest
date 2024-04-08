@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color red
+color red_tr
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable splash_progress_bar_drawable
+id FirstFragment
+id container
+id nav_graph
+id nav_host_fragment_content_main
+id progress
+id text
+layout activity_main
+layout fragment_splash
+mipmap ic_launcher
+mipmap ic_launcher_round
+navigation nav_graph
+string app_name
+string default_web_client_id
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
+style Base.Theme.TestWebCloak
+style Theme.TestWebCloak
+xml backup_rules
+xml data_extraction_rules

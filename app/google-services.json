@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "353599915048",
+    "firebase_url": "https://testapi-4c364-default-rtdb.firebaseio.com",
+    "project_id": "testapi-4c364",
+    "storage_bucket": "testapi-4c364.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353599915048:android:fb5b8a7f36291d8c8d611d",
+        "android_client_info": {
+          "package_name": "com.trends.newcloack.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr64cv6UG1_ID9THr7etiGsYSDmgv-J7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353599915048:android:1c975374f6832a778d611d",
+        "android_client_info": {
+          "package_name": "com.trends.testwebcloak.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr64cv6UG1_ID9THr7etiGsYSDmgv-J7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353599915048:android:92ccb9e4407e0eb68d611d",
+        "android_client_info": {
+          "package_name": "net.sorokinapps.zombies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr64cv6UG1_ID9THr7etiGsYSDmgv-J7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
