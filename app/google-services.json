@@ -10,6 +10,35 @@
       "client_info": {
         "mobilesdk_app_id": "1:353599915048:android:fb5b8a7f36291d8c8d611d",
         "android_client_info": {
+          "package_name": "com.trends.newcloack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr64cv6UG1_ID9THr7etiGsYSDmgv-J7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353599915048-qm67m55aj7tedeqtnpjh4q48o28kirbf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353599915048:android:2323d469039a3dc98d611d",
+        "android_client_info": {
           "package_name": "com.trends.newcloack.debug"
         }
       },
