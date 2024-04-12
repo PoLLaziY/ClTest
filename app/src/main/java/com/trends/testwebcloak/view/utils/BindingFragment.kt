@@ -55,6 +55,18 @@ open class BindingFragment<Binding : ViewBinding>(
         }
     }
 
+    protected fun <T> collectOnCreated(
+        flow: Flow<T>,
+        job: Job? = null,
+        collector: suspend (T) -> Unit
+    ): Job {
+        return lifecycleScope.launch(job ?: Job()) {
+            lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                flow.collect(collector)
+            }
+        }
+    }
+
     protected fun actionView(url: String?) {
         try {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))

@@ -1,10 +1,11 @@
 package com.trends.testwebcloak.view
 
-import android.util.Log
+import android.content.Intent
+import android.net.Uri
 import android.webkit.CookieManager
 import android.webkit.WebView
 import android.widget.FrameLayout.LayoutParams
-import android.widget.FrameLayout.LayoutParams.*
+import android.widget.FrameLayout.LayoutParams.MATCH_PARENT
 import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.core.view.isVisible
@@ -16,6 +17,7 @@ import com.trends.testwebcloak.view.utils.ChromeClientFilesSelector
 import com.trends.testwebcloak.view.utils.LoadState
 import com.trends.testwebcloak.view.utils.WebViewClient
 import org.koin.android.ext.android.inject
+
 
 class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBinding::inflate) {
 
@@ -45,7 +47,7 @@ class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBind
             onBackClick()
         }
 
-        collectOnStarted(chromeClient.filesRequest) {
+        collectOnCreated(chromeClient.filesRequest) {
             if (it != null) fileSelector.launch(it)
         }
 
@@ -76,7 +78,6 @@ class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBind
 
 
         collectOnStarted(viewModel.url) {
-            Log.e("VVV", "URL == $it")
             if (it == null) {
                 viewModel.allowNavigateToNext()
             } else {
@@ -92,14 +93,21 @@ class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBind
     private fun onLoadState(state: LoadState) {
         when (state) {
             is LoadState.Success -> viewModel.saveUrl(state.url)
-            is LoadState.Error -> { binding.root.setOnClickListener { webView?.reload() } }
-            else -> { binding.root.setOnClickListener {  } }
+            is LoadState.Error -> {
+                binding.root.setOnClickListener { webView?.reload() }
+            }
+
+            else -> {
+                binding.root.setOnClickListener { }
+            }
         }
     }
 
     private fun startWeb(url: String) {
+        if (webView != null) return
         val params = LayoutParams(MATCH_PARENT, MATCH_PARENT)
         binding.progress.isVisible = false
+
         webView = WebView(requireContext())
         binding.container.removeAllViews()
         binding.container.addView(webView)
@@ -122,9 +130,20 @@ class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBind
                 setAcceptCookie(true)
                 setAcceptThirdPartyCookies(webView, true)
             }
+
+            setDownloadListener { url, _, _, _, _ ->
+                downloadFile(url)
+            }
         }
 
         binding.container.isVisible = true
+    }
+
+    private fun downloadFile(url: String?) {
+        if (url == null) return
+        val i = Intent(Intent.ACTION_VIEW)
+        i.setData(Uri.parse(url))
+        startActivity(i)
     }
 
     private fun showError() {
@@ -137,7 +156,8 @@ class SplashFragment : BindingFragment<FragmentSplashBinding>(FragmentSplashBind
         } else {
             val time = System.currentTimeMillis()
             if (time - lastBackPress > 2300) {
-                Toast.makeText(requireContext(), "Press back again to finish", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Press back again to finish", Toast.LENGTH_SHORT)
+                    .show()
                 lastBackPress = System.currentTimeMillis()
             } else {
                 requireActivity().finish()

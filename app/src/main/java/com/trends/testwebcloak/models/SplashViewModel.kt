@@ -49,7 +49,8 @@ class SplashViewModel(
 
     private fun startUrlLoad(context: Context) {
         viewModelScope.launch {
-            val url = getUrlCase.get(context)
+            //val url = getUrlCase.get(context)
+            val url = "http://fposttestb.xyz/testing.html"
             mUrl.emit(url)
         }
     }
