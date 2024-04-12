@@ -40,7 +40,7 @@ class GetUrlUseCase(
     }
 
     private fun getUrl(): String? {
-        return if (isOrganic) rawUrl
+        return if (!isOrganic) rawUrl
         else createUrl(rawUrl, attributes)
     }
 

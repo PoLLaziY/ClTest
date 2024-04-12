@@ -1,14 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\PoLLaziY\\.gradle\\daemon\\8.2\\com.trends.testwebcloak.app-mergeDebugResources-56:\\layout\\fragment_splash.xml",
-        "source": "C:\\Users\\PoLLaziY\\.gradle\\daemon\\8.2\\com.trends.testwebcloak.app-main-59:\\layout\\fragment_splash.xml"
-    },
-    {
         "merged": "com.trends.testwebcloak.app-mergeDebugResources-56:/layout/fragment_splash.xml",
         "source": "com.trends.testwebcloak.app-main-59:/layout/fragment_splash.xml"
     },
     {
-        "merged": "C:\\Users\\PoLLaziY\\.gradle\\daemon\\8.2\\com.trends.testwebcloak.app-mergeDebugResources-56:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\PoLLaziY\\.gradle\\daemon\\8.2\\com.trends.testwebcloak.app-main-59:\\layout\\activity_main.xml"
+        "merged": "com.trends.testwebcloak.app-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "com.trends.testwebcloak.app-main-59:/layout/activity_main.xml"
     }
 ]
